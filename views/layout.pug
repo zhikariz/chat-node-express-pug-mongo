@@ -1,0 +1,39 @@
+html(lang="en")
+head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    title Admin Page
+    meta(content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport")
+    link(rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css")
+    link(rel="stylesheet" href="/bower_components/font-awesome/css/font-awesome.min.css")
+    link(rel="stylesheet" href="/bower_components/Ionicons/css/ionicons.min.css")
+    link(rel="stylesheet" href="/dist/css/AdminLTE.min.css")
+    link(rel="stylesheet" href="/dist/css/skins/_all-skins.min.css")
+    link(rel="stylesheet" href="/css/pagination.css")
+    link(rel="stylesheet" href="/css/bootstrap-datetimepicker.min.css")
+    link(rel="stylesheet" href="/css/bootstrap4-toggle.min.css")
+    link(rel="stylesheet" href="/bower_components/morris.js/morris.css")
+    block css
+body(class="hold-transition skin-blue-light sidebar-mini")
+    div(class="wrapper")
+        include header
+        include sidebar
+        div(class="content-wrapper" id="body")
+            section(class="content-header")
+                block title
+                ol(class="breadcrumb")
+            section(class="content container-fluid")
+                block content
+        include footer
+    script(src="/bower_components/jquery/dist/jquery.min.js")
+    script(src="/bower_components/bootstrap/dist/js/bootstrap.min.js")
+    script(src="/bower_components/jquery-ui/jquery-ui.min.js")
+    script(src="/bower_components/moment/min/moment.min.js")
+    script(src="/js/bootstrap-datetimepicker.min.js")
+    script(src="/js/bootstrap4-toggle.min.js")
+    script(src="/bower_components/raphael/raphael.min.js")
+    script(src="/bower_components/morris.js/morris.min.js")
+    script(src="/bower_components/fastclick/lib/fastclick.js")
+    script(src="/dist/js/adminlte.min.js")
+    script(src="/js/loss.js")
+    block javascript

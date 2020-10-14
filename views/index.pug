@@ -1,0 +1,26 @@
+extend layout
+block title
+    h1 Chat
+block javascript
+    script(src="/assets/chat.js")
+block content
+    div(class="col-md-6")
+        div(class="box box-warning direct-chat direct-chat-warning")
+            div(class="box-header with-border")
+                h3(class="box-title") Direct Chat
+                div(class="box-tools pull-right")
+                    span(data-toggle="tooltip" title="" class="badge bg-yellow" data-original-title="3 New Messages") 3
+                    button(type="button" class="btn btn-box-tool" data-widget="collapse")
+                        i(class="fa fa-minus")
+                    button(type="button" class="btn btn-box-tool" data-toggle="tooltip" title="" data-widget="chat-pane-toggle" data-original-title="Contacts")
+                        i(class="fa fa-comments")
+                    button(type="button" class="btn btn-box-tool" data-widget="remove")
+                        i(class="fa fa-times")
+            div(class="box-body")
+                div(id="chat" class="direct-chat-messages")
+            div(class="box-footer")
+                form(action="#" method="post")
+                    div(class="input-group")
+                        input(id="text-pesan" type="text" name="message" placeholder="Type Message..." class="form-control")
+                        span(class="input-group-btn")
+                            button(id="btn-submit" type="button" class="btn btn-warning btn-flat") Send
