@@ -5,9 +5,9 @@ let nama_penerima = receiver == 1 ? 'Helmi 1' : 'Helmi 2';
 
 
 $(document).ready(function () {
-  setTimeout(function () {
+  /*setTimeout(function () {
     window.location.reload(1);
-  }, 5000);
+  }, 5000);*/
   /*$.get("/api/chats/get/"+sender+"/"+receiver, function (data, status) {
     console.log(data);
   });*/
